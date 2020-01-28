@@ -27,7 +27,6 @@ task ("pug", () => {
 
 const styles = [
   'node_modules/normalize.css/normalize.css',
-  'node_modules/@fortawesome/fontawesome-free/css/*.css',
   'src/styles/main.scss',
  ];
 

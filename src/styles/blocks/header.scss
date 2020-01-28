@@ -23,6 +23,7 @@
   @include phones {
     font-size: 23px;
     margin-right: auto;
+    padding: 0 2%;
   }
 }
 .header__tech-support{
@@ -50,7 +51,11 @@
 .header__bottom {
   display: flex;
   align-items: center;
-  padding: 0 2%;
+
+  @include phones {
+    padding: 0 2%;
+  }
+  
 }
 
 .header__logo {
@@ -73,7 +78,7 @@
   @include tablets {
     justify-content: flex-end;
   }
-  @include tablets {
+  @include phones {
     justify-content: center;
   }
 }
