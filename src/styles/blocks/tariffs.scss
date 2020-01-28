@@ -1,0 +1,32 @@
+.tariffs {
+  &__container {
+    padding: 200px 0 120px;
+
+    @include phones{
+      font-size: 40px;
+      padding: 104px 0 60px;
+    }
+  }
+
+  &__title {
+    font-size: 50px;
+    color: #0768a7;
+    font-weight: 300;
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 110px;
+
+    @include phones{
+      font-size: 40px;
+      margin-bottom: 60px;
+    }
+  }
+
+  &__list {
+    display: flex;
+
+    @include phones{
+      flex-direction: column;
+    }
+  }
+}

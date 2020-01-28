@@ -1,0 +1,57 @@
+.advantages {
+  position: relative;
+
+  &__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 115px 0;;
+
+    @include phones {
+      padding: 100px 0 70px;
+    }
+  }
+  &__title {
+    font-size: 50px;
+    color: #0768a7;
+    font-weight: 300;
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 130px;
+
+    @include phones {
+      font-size: 38px;
+      margin-bottom: 82px;
+    }
+  }
+ &__list {
+    margin-bottom: 108px;
+    width: 100%;
+    @include phones {
+      margin-bottom: 1.75rem;
+    }
+    
+ } 
+ &__item {
+   margin-bottom: 70px;
+   &:last-child {
+    margin-bottom: 0px;
+   }
+ } 
+ &__btn {
+  &.btn-send {
+    padding: 20px 100px;
+  }
+
+  @include phones {
+    &.btn-send {
+      font-size: 21px;
+      padding: 20px 60px;
+    }
+    
+  }
+ }
+
+  
+
+} 

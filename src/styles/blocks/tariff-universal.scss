@@ -1,0 +1,117 @@
+.tariff-universal {
+  padding-right: 30px;
+  width: 25%;
+  border-right: 1px solid #bad1e5;
+
+  @include desktop {
+    width: 35%;
+  }
+
+  @include phones{
+    width: 100%;
+    border: none;
+    padding: 0;
+    margin-bottom: 45px;
+  }
+
+  &__title {
+    font-size: 20px;
+    color: #4388a6;
+    font-weight: 500;
+    margin-bottom: 40px;
+
+    @include phones{
+      font-size: 24px;
+    }
+  }
+
+  &__features {
+    margin-bottom: 107px;
+
+    @include tablets {
+      margin-bottom: 45px;
+    }
+    @include phones{
+      margin-bottom: 55px;
+      padding-right: 15%;
+    }
+  }
+
+  &__features-item {
+    font-size: 15px;
+    color: #45484a;
+    font-weight: 300;
+    margin-bottom: 24px;
+
+    &:last-child {
+      margin-bottom: 0px;
+    }
+
+    @include phones  {
+      font-size: 16px;
+    }
+  }
+
+  
+  
+  &__price-row {
+    display: flex;
+    margin-bottom: 7px;
+    position: relative;
+    @include phones {
+      margin-bottom: 14px;
+    }
+  }
+  &__price-info {
+    width: 100%;
+    position: absolute;
+    visibility: hidden;
+    opacity: 0;
+    background-color: #a7bfd3;
+    color: #fff;
+    border-radius: 10px;
+    padding: 15px;
+    bottom: 25px;
+    font-size: 13px;
+
+    
+
+  }
+  &__price-text {
+    margin-right: 10px;
+    font-size: 13px;
+    @include phones {
+      font-size: 16px;
+    }
+  }
+  &__price-value {
+    flex: 1;
+    text-align: center;
+    font-weight: bold;
+    font-size: 15px;
+    @include phones {
+      font-size: 19px;
+      text-align: left;
+    }
+  }
+  &__icon {
+    fill: #a7bfd3;
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+
+    @include phones {
+      width: 23px;
+      height: 23px;
+      margin-right: 10px;
+    }
+    &:hover {
+      ~ .tariff-universal__price-info {
+        visibility: visible;
+        opacity: 1;
+        transition: 0.5s;
+      }
+    }
+  }
+
+}

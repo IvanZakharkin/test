@@ -1,0 +1,21 @@
+.btn-scrollup {
+  border: none;
+  width: 65px;
+  height: 60px;
+  background: #80b5df;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  display: none;
+
+  @include tablets {
+    display: block;
+  }
+}
+
+.btn-scrollup__icon {
+  transform: rotate(90deg);
+  width: 40px;
+  height: 25px;
+  fill: #f4f5f6;
+}

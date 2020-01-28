@@ -1,0 +1,118 @@
+.tariff-package {
+  padding-left: 30px;
+  flex: 1;
+
+  @include phones{
+    padding: 0;
+  }
+
+  &__title {
+    font-size: 20px;
+    color: #4388a6;
+    font-weight: 500;
+    margin-bottom: 40px;
+
+    @include phones{
+      font-size: 24px;
+    }
+  }
+
+  &__features {
+    width: 60%;
+    margin-bottom: 45px;
+
+    @include phones{
+      width: 100%;
+      margin-bottom: 50px;
+    }
+  }
+
+  &__features-item {
+    font-size: 15px;
+    color: #45484a;
+    font-weight: 300;
+    margin-bottom: 24px;
+
+    &:last-child {
+      margin-bottom: 0px;
+    }
+
+    @include phones  {
+      font-size: 16px;
+    }
+  }
+
+  &__price{
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -14px;
+
+    @include phones  {
+      padding: 0 4%;
+    }
+
+  }
+  &__price-item{
+    padding: 11px 15px;
+    cursor: pointer;
+
+    &:last-child {
+      margin-right: 0;
+    }
+
+    &:hover {
+      background: #e9f1f7;
+      .tariff-package__economy {
+        visibility: visible;
+      }
+    }
+  }
+
+  &__price-title {
+    color: #4388a6;
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 26px;
+
+    @include phones{
+      font-size: 24px;
+    }
+  }
+  &__price-row {
+    color: #020000;
+    font-size: 14px;
+    font-weight: 400;
+    margin-bottom: 15px;
+
+    &:last-child {
+      margin-bottom: 0px;
+    }
+
+    @include phones{
+      font-size: 16px;
+    }
+  }
+
+  &__economy {
+    visibility: hidden;
+    color: #4388a6;
+    margin-top: 23px;
+
+  }
+  &__text {
+    font-size: 18px;
+    margin-bottom: 3px;
+
+    @include phones{
+      font-size: 20px;
+    }
+  }
+  &__economy-value {
+    font-size: 24px;
+    font-weight: bold;
+  }
+
+  @include phones{
+    font-size: 26px;
+  }
+}

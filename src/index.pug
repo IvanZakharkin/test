@@ -1,0 +1,154 @@
+include ./mixins.pug
+- var rub = "&#8381;";
+<!DOCTYPE html>
+html(lang="ru")
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    meta(http-equiv="X-UA-Compatible", content="ie=edge")
+    title test
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu:300,300i,400,400i,500,500i,700,700i&display=swap&subset=cyrillic" rel="stylesheet">
+    link(rel="stylesheet" href="./main.css")
+  body
+    .wrapper
+      header.header
+        .container.header__container
+          .header__top
+            a.header__tel(href="#") +7 (495) 411-72-72
+            a.header__tech-support(href="#") Техподдержка
+            a.header__login(href="#") Войти
+          .header__bottom
+            .header__logo.logo
+              +image("logo.png", "logo__img")
+            .header__nav  
+              nav.nav
+                ul.nav__list
+                  each navItem in ["Электронные документы", "Возможности", "Преимущества", "Стоимость", "Контакты"]
+                    li.nav__item
+                      a(href="#").nav__link= navItem
+              .header__burger-menu
+                a.burger-menu
+                  .burger-menu__line
+
+
+      section.electronic-doc
+          .electronic-doc__desk
+            .container.electronic-doc__desk-container
+              .electronic-doc__content
+                h2.title.electronic-doc__title Электронные документы
+                .electronic-doc__text Система обмена юридически значимыми первичными документами, подписанными электронной подписью
+              .electronic-doc__video
+                #video
+          .electronic-doc__features
+            .container.electronic-doc__features-container
+              ul.electronic-doc__features-list
+                  li.electronic-doc__feature
+                    .electronic-doc__feature-content
+                      .electronic-doc__feature-title Электронные cчета-фактуры
+                      .electronic-doc__feature-text С 23 мая 2012 года электронный cчет-фактура являетcя полноценной заменой бумажного оригинала и может быть представлен в налоговую в электронном виде по ТКС. Порядок обмена cчетами-фактурами опиcан в #[a.electronic-doc__feature-link Приказе Минфина №50н].
+                  li.electronic-doc__feature
+                    .electronic-doc__feature-content
+                      .electronic-doc__feature-title Акты, накладные, договоры и пр.
+                      .electronic-doc__feature-text Обмен электронными документами других типов не подвергается жесткой регламентации со стороны контролирующих органов и осуществляется между российскими компаниями с 2002 года.
+              
+      section.consultation
+        .container.consultation__container
+          h2.consultation__title Закажите консультацию
+          form.form(action="post")
+            .form__col
+              .form__row   
+                .form__block
+                  input(class=`form__input` type= "text" name= "name" placeholder="Ваше имя Название организации" require)  
+              .form__row
+                .form__block
+                  input(class=`form__input` type= "email" name= "email" placeholder="Электронная почта" require)
+                .form__block
+                  input(class=`form__input` type= "text" name= "telephone" placeholder="Телефон" require)
+              .form__row.form__row_btn  
+                .form__block
+                  input.btn-send.form__btn-send(type="submit" value="Отправить" name="btn-send")
+      section.search
+        .container.container_w_1100.search__container
+          h2.search__title Проверьте, кто из ваших контрагентов уже в диадоке         
+          .search__row
+            input.search__form(type="text" name="search-form")   
+            +icon("search", "search__form-icon")
+          .search__text Чтобы проверить сразу всех контрагентов 
+            a.search__link(href="#") загрузите список ИНН
+            +icon("help-round-button", "search__help-icon")
+            .search__help-info Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dicta debitis eaque unde non. Fugit, quibusdam? Iusto repudiandae magni iure odit obcaecati voluptatum similique. Sed aperiam fugiat officia minus quam dolor.
+      section.advantages.section-bg-triangles
+        .container.container_w_1100.advantages__container
+          h2.advantages__title Преимущества 
+          ul.advantages__list
+            li.advantages__item.advantage
+              .advantage__img
+                +image("advantage-1.png", "advantage__pic")
+              .advantage__content
+                h3.advantage__title БезБумаг умеет взаимодействовать со всеми бухгалтерскими системами
+                .advantage__content
+                  .advantage__text Вне зависимости от того, какое учетное ПО стоит в вашей организации: 1С, SAP, Oracle и другие — БезБумаг сможет легко встроиться в ваши бизнес-процессы #[span (подробнее о способах интеграции)].
+                  .advantage__detail-text Lorem ipsum dolor sit, amet consectetur adipisicing elit. Debitis nemo illo molestiae accusantium cumque obcaecati consectetur nobis est, consequuntur harum architecto veritatis dolorem reprehenderit possimus libero, velit blanditiis iusto inventore.
+                button.advantage__btn-more Подробнее
+            li.advantages__item.advantage
+              .advantage__img
+                +image("advantage-2.png", "advantage__pic")
+              .advantage__content
+                h3.advantage__title Хранить документы в БезБумаг безопаснее, чем на личном компьютере
+                .advantage__content 
+                  .advantage__text Каждый документ #[span надежно защищен]. Электронные документы передаются по зашифрованному каналу, исключающему перехват или подмену данных.
+                  .advantage__detail-text Lorem ipsum dolor sit, amet consectetur adipisicing elit. Debitis nemo illo molestiae accusantium cumque obcaecati consectetur nobis est, consequuntur harum architecto veritatis dolorem reprehenderit possimus libero, velit blanditiis iusto inventore.
+                button.advantage__btn-more Подробнее
+          button.advantages__btn.btn-send Отправить заявку
+
+      section.tariffs.section-bg-triangles
+        .container.tariffs__container
+          h2.title.tariffs__title Стоимость
+          .tariffs__list
+            .tariffs__item.tariff-universal
+              h3.tariff-universal__title Универсальный тариф       
+              ul.tariff-universal__features
+                li.tariff-universal__features-item Входящие документы <br>бесплатно.
+                li.tariff-universal__features-item Исходящие документы оплачиваются по факту в конце каждого месяца.
+              .tariff-universal__price
+                .tariff-universal__price-row 
+                  span.tariff-universal__price-text Формализованные
+                  +icon("help-round-button", "tariff-universal__icon")
+                  .tariff-universal__price-info Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dicta debitis eaque unde non. Fugit, quibusdam? Iusto repudiandae magni iure odit obcaecati voluptatum similique. Sed aperiam fugiat officia minus quam dolor.
+                  span.tariff-universal__price-value 7 !{rub} 
+                .tariff-universal__price-row
+                  span.tariff-universal__price-text Неформализованные
+                  +icon("help-round-button", "tariff-universal__icon")
+                  .tariff-universal__price-info Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dicta debitis eaque unde non. Fugit, quibusdam? Iusto repudiandae magni iure odit obcaecati voluptatum similique. Sed aperiam fugiat officia minus quam dolor. 
+                  span.tariff-universal__price-value 3,5 !{rub} 
+            .tariffs__item.tariff-package
+              h3.tariff-package__title Пакетные тарифы
+              ul.tariff-package__features
+                li.tariff-package__features-item Входящие документы <br>бесплатно.
+                li.tariff-package__features-item Исходящие документы уже оплачены. <br>Предоплата расходуется по специальным ценам: чем больше пакет — тем дешевле стоит каждый документ.
+              - 
+                var prices = [ 
+                  ["3 500", "500", "7", "1 000", "3,5", "2000"], 
+                  ["13 600", "2 000", "6,8", "4 000", "3,4", "1500"], 
+                  ["33 000", "5 000", "6,6", "10 000", "3,3", "5000"], 
+                  ["64 000", "10 000", "6,4", "20 000", "3,2", "7000"], 
+                  ["93 000", "15 000", "6,2", "30 000", "3,1", "10 000"], 
+                  ["120 000", "20 000", "6", "40 000", "3", "20 000"], 
+                ]
+
+              
+              ul.tariff-package__price
+                each pricesItem in prices
+                  li.tariff-package__price-item
+                    h4.tariff-package__price-title !{pricesItem[0]} !{rub}
+                    .tariff-package__price-row #{pricesItem[1]} x
+                      b  #{pricesItem[2]} !{rub}
+                    .tariff-package__price-row #{pricesItem[3]} x
+                      b  #{pricesItem[4]} !{rub}
+                    .tariff-package__economy
+                      .tariff-package__text Экономия
+                      .tariff-package__economy-value #{pricesItem[5]} !{rub}
+      button.btn-scrollup
+        +icon("arrow", "btn-scrollup__icon")
+    <script src="https://www.youtube.com/iframe_api"></script>
+    <script src="./main.js"></script>                      

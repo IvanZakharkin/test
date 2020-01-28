@@ -1,0 +1,45 @@
+.consultation {
+  position: relative;
+  &:before {
+    content: "";
+    display: block;
+    z-index: -10;
+    position: absolute;
+    top: -5px;
+    left: 0;
+    width: 40%;
+    height: 40%;
+    background: url("./images/backgrounds/bg-triangle-consult.png") 0% 0%/ contain no-repeat;
+
+  }
+  // overflow: hidden;
+
+  @include desktop {
+    background-size: 50% 50%;
+  }
+  @include phones {
+    &:before {
+      display: none;
+    }
+  }
+  &__container {
+    padding: 88px 0 120px 0;
+    @include phones {
+      padding: 20px 0 64px 0;
+    }
+  }
+
+  &__title {
+    font-size: 50px;
+    color: #0768a7;
+    font-weight: 300;
+    text-align: center;
+    margin-bottom: 75px;
+
+    @include phones {
+      font-size: 28px;
+      padding: 0 10%;
+      margin-bottom: 20px;
+    }
+  }
+}

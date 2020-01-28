@@ -1,0 +1,137 @@
+.advantage {
+  display: flex;
+
+  @include tablets {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &__title {
+    font-size: 24px;
+    color: #0768a7;
+    font-weight: 300;
+    margin-bottom: 45px;
+    width: 66%;
+    line-height: 1.4375;
+
+    @include tablets {
+      width: 100%;
+    }
+    @include phones {
+      margin-bottom: 15px;
+    }
+
+  }
+  &__content {
+    font-size: 15px;
+    color: #040505;
+    font-weight: 300;
+    margin-bottom: 12px;
+    padding-right: 50px;
+    flex: 1;
+
+    @include tablets {
+      padding: 0 10%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+
+    @include phones {
+      padding: 0;
+      font-size: 16px;
+    }
+  }
+
+  &__text {
+    span {
+      color: #0768a7;
+    }
+  }
+
+  &__detail-text {
+    visibility: hidden;
+    opacity: 0;
+    max-height: 0;
+    transition-property: opacity max-height;
+    transition: 0.5s;
+
+   
+    
+  }
+  &__detail-text.active {
+    visibility: visible;
+    opacity: 1;
+    max-height: 500px;
+    transition-property: opacity max-height;
+    transition:  0.5s;
+  }
+
+  &__img {
+    width: 33.2%;
+    margin-right: 56px;
+
+    @include tablets {
+      margin: 0;
+      width: auto;
+    }
+
+    @include phones {
+      width: 80%;
+    }
+  }
+
+
+  &__btn-more {
+    border: none;
+    background: none;
+    cursor: pointer;
+    outline: none;
+    color: #48759b;
+    position: relative;
+    padding: 0;
+    padding-right: 13px;
+    padding-bottom: 8px;
+    // border-bottom: 1px dashed #48759b;
+
+    &:after {
+      content: "";
+      display: block;
+      width: 0;
+      height: 0;
+      border: 4px solid transparent;
+      border-top: 5px solid #8cb4c7;
+      position: absolute;
+      right: 0;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+    &:before {
+      content: "";
+      display: block;
+      width: 100%;
+      height: 2px;
+      background-image: linear-gradient(to right, #8cb4c7 80%, transparent 80%);
+      background-repeat: repeat-x;
+      background-size: 10px 1px;
+      position: absolute;
+      bottom: 0;
+    }
+
+    @include phones {
+      font-size: 20px;
+    }
+  }
+
+  &__btn-more.active {
+    &:after {
+      transform-origin: center;
+      transform: translateY(-50%) rotate(180deg);
+      transform-origin: 50% 30%;
+
+    }
+  }  
+
+  
+}

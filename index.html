@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta charset="UTF-8"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+		<meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+		<title>test</title><link href="https://fonts.googleapis.com/css?family=Ubuntu:300,300i,400,400i,500,500i,700,700i&display=swap&subset=cyrillic" rel="stylesheet">
+		<link rel="stylesheet" href="./main.css"/>
+	</head>
+	<body>
+		<div class="wrapper">
+			<header class="header">
+				<div class="container header__container">
+					<div class="header__top"><a class="header__tel" href="#">+7 (495) 411-72-72</a><a class="header__tech-support" href="#">Техподдержка</a><a class="header__login" href="#">Войти</a></div>
+					<div class="header__bottom">
+						<div class="header__logo logo"><img class="logo__img" src="./images/logo.png"/>
+						</div>
+						<div class="header__nav"> 
+							<nav class="nav">
+								<ul class="nav__list">
+									<li class="nav__item"><a class="nav__link" href="#">Электронные документы</a></li>
+									<li class="nav__item"><a class="nav__link" href="#">Возможности</a></li>
+									<li class="nav__item"><a class="nav__link" href="#">Преимущества</a></li>
+									<li class="nav__item"><a class="nav__link" href="#">Стоимость</a></li>
+									<li class="nav__item"><a class="nav__link" href="#">Контакты</a></li>
+								</ul>
+							</nav>
+							<div class="header__burger-menu"><a class="burger-menu">
+									<div class="burger-menu__line"></div></a></div>
+						</div>
+					</div>
+				</div>
+			</header>
+			<section class="electronic-doc">
+				<div class="electronic-doc__desk">
+					<div class="container electronic-doc__desk-container">
+						<div class="electronic-doc__content">
+							<h2 class="title electronic-doc__title">Электронные документы</h2>
+							<div class="electronic-doc__text">Система обмена юридически значимыми первичными документами, подписанными электронной подписью</div>
+						</div>
+						<div class="electronic-doc__video">
+							<div id="video"></div>
+						</div>
+					</div>
+				</div>
+				<div class="electronic-doc__features">
+					<div class="container electronic-doc__features-container">
+						<ul class="electronic-doc__features-list">
+							<li class="electronic-doc__feature">
+								<div class="electronic-doc__feature-content">
+									<div class="electronic-doc__feature-title">Электронные cчета-фактуры</div>
+									<div class="electronic-doc__feature-text">С 23 мая 2012 года электронный cчет-фактура являетcя полноценной заменой бумажного оригинала и может быть представлен в налоговую в электронном виде по ТКС. Порядок обмена cчетами-фактурами опиcан в <a class="electronic-doc__feature-link">Приказе Минфина №50н</a>.</div>
+								</div>
+							</li>
+							<li class="electronic-doc__feature">
+								<div class="electronic-doc__feature-content">
+									<div class="electronic-doc__feature-title">Акты, накладные, договоры и пр.</div>
+									<div class="electronic-doc__feature-text">Обмен электронными документами других типов не подвергается жесткой регламентации со стороны контролирующих органов и осуществляется между российскими компаниями с 2002 года.</div>
+								</div>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</section>
+			<section class="consultation">
+				<div class="container consultation__container">
+					<h2 class="consultation__title">Закажите консультацию</h2>
+					<form class="form" action="post">
+						<div class="form__col">
+							<div class="form__row">  
+								<div class="form__block">
+									<input class="form__input" type="text" name="name" placeholder="Ваше имя Название организации" require="require"/>
+								</div>
+							</div>
+							<div class="form__row">
+								<div class="form__block">
+									<input class="form__input" type="email" name="email" placeholder="Электронная почта" require="require"/>
+								</div>
+								<div class="form__block">
+									<input class="form__input" type="text" name="telephone" placeholder="Телефон" require="require"/>
+								</div>
+							</div>
+							<div class="form__row form__row_btn"> 
+								<div class="form__block">
+									<input class="btn-send form__btn-send" type="submit" value="Отправить" name="btn-send"/>
+								</div>
+							</div>
+						</div>
+					</form>
+				</div>
+			</section>
+			<section class="search">
+				<div class="container container_w_1100 search__container">
+					<h2 class="search__title">Проверьте, кто из ваших контрагентов уже в диадоке         </h2>
+					<div class="search__row">
+						<input class="search__form" type="text" name="search-form"/>
+						<svg class="search__form-icon">
+							<use xlink:href="./images/icons/sprite.svg#search"></use>
+						</svg>
+					</div>
+					<div class="search__text">Чтобы проверить сразу всех контрагентов <a class="search__link" href="#">загрузите список ИНН</a>
+						<svg class="search__help-icon">
+							<use xlink:href="./images/icons/sprite.svg#help-round-button"></use>
+						</svg>
+						<div class="search__help-info">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dicta debitis eaque unde non. Fugit, quibusdam? Iusto repudiandae magni iure odit obcaecati voluptatum similique. Sed aperiam fugiat officia minus quam dolor.</div>
+					</div>
+				</div>
+			</section>
+			<section class="advantages section-bg-triangles">
+				<div class="container container_w_1100 advantages__container">
+					<h2 class="advantages__title">Преимущества </h2>
+					<ul class="advantages__list">
+						<li class="advantages__item advantage">
+							<div class="advantage__img"><img class="advantage__pic" src="./images/advantage-1.png"/>
+							</div>
+							<div class="advantage__content">
+								<h3 class="advantage__title">БезБумаг умеет взаимодействовать со всеми бухгалтерскими системами</h3>
+								<div class="advantage__content">
+									<div class="advantage__text">Вне зависимости от того, какое учетное ПО стоит в вашей организации: 1С, SAP, Oracle и другие — БезБумаг сможет легко встроиться в ваши бизнес-процессы <span>(подробнее о способах интеграции)</span>.</div>
+									<div class="advantage__detail-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Debitis nemo illo molestiae accusantium cumque obcaecati consectetur nobis est, consequuntur harum architecto veritatis dolorem reprehenderit possimus libero, velit blanditiis iusto inventore.</div>
+								</div>
+								<button class="advantage__btn-more">Подробнее</button>
+							</div>
+						</li>
+						<li class="advantages__item advantage">
+							<div class="advantage__img"><img class="advantage__pic" src="./images/advantage-2.png"/>
+							</div>
+							<div class="advantage__content">
+								<h3 class="advantage__title">Хранить документы в БезБумаг безопаснее, чем на личном компьютере</h3>
+								<div class="advantage__content"> 
+									<div class="advantage__text">Каждый документ <span>надежно защищен</span>. Электронные документы передаются по зашифрованному каналу, исключающему перехват или подмену данных.</div>
+									<div class="advantage__detail-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Debitis nemo illo molestiae accusantium cumque obcaecati consectetur nobis est, consequuntur harum architecto veritatis dolorem reprehenderit possimus libero, velit blanditiis iusto inventore.</div>
+								</div>
+								<button class="advantage__btn-more">Подробнее</button>
+							</div>
+						</li>
+					</ul>
+					<button class="advantages__btn btn-send">Отправить заявку</button>
+				</div>
+			</section>
+			<section class="tariffs section-bg-triangles">
+				<div class="container tariffs__container">
+					<h2 class="title tariffs__title">Стоимость</h2>
+					<div class="tariffs__list">
+						<div class="tariffs__item tariff-universal">
+							<h3 class="tariff-universal__title">Универсальный тариф       </h3>
+							<ul class="tariff-universal__features">
+								<li class="tariff-universal__features-item">Входящие документы <br>бесплатно.</li>
+								<li class="tariff-universal__features-item">Исходящие документы оплачиваются по факту в конце каждого месяца.</li>
+							</ul>
+							<div class="tariff-universal__price">
+								<div class="tariff-universal__price-row"> <span class="tariff-universal__price-text">Формализованные</span>
+									<svg class="tariff-universal__icon">
+										<use xlink:href="./images/icons/sprite.svg#help-round-button"></use>
+									</svg>
+									<div class="tariff-universal__price-info">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dicta debitis eaque unde non. Fugit, quibusdam? Iusto repudiandae magni iure odit obcaecati voluptatum similique. Sed aperiam fugiat officia minus quam dolor.</div><span class="tariff-universal__price-value">7 &#8381; </span>
+								</div>
+								<div class="tariff-universal__price-row"><span class="tariff-universal__price-text">Неформализованные</span>
+									<svg class="tariff-universal__icon">
+										<use xlink:href="./images/icons/sprite.svg#help-round-button"></use>
+									</svg>
+									<div class="tariff-universal__price-info">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dicta debitis eaque unde non. Fugit, quibusdam? Iusto repudiandae magni iure odit obcaecati voluptatum similique. Sed aperiam fugiat officia minus quam dolor. </div><span class="tariff-universal__price-value">3,5 &#8381; </span>
+								</div>
+							</div>
+						</div>
+						<div class="tariffs__item tariff-package">
+							<h3 class="tariff-package__title">Пакетные тарифы</h3>
+							<ul class="tariff-package__features">
+								<li class="tariff-package__features-item">Входящие документы <br>бесплатно.</li>
+								<li class="tariff-package__features-item">Исходящие документы уже оплачены. <br>Предоплата расходуется по специальным ценам: чем больше пакет — тем дешевле стоит каждый документ.</li>
+							</ul>
+							<ul class="tariff-package__price">
+								<li class="tariff-package__price-item">
+									<h4 class="tariff-package__price-title">3 500 &#8381;</h4>
+									<div class="tariff-package__price-row">500 x<b> 7 &#8381;</b></div>
+									<div class="tariff-package__price-row">1 000 x<b> 3,5 &#8381;</b></div>
+									<div class="tariff-package__economy">
+										<div class="tariff-package__text">Экономия</div>
+										<div class="tariff-package__economy-value">2000 &#8381;</div>
+									</div>
+								</li>
+								<li class="tariff-package__price-item">
+									<h4 class="tariff-package__price-title">13 600 &#8381;</h4>
+									<div class="tariff-package__price-row">2 000 x<b> 6,8 &#8381;</b></div>
+									<div class="tariff-package__price-row">4 000 x<b> 3,4 &#8381;</b></div>
+									<div class="tariff-package__economy">
+										<div class="tariff-package__text">Экономия</div>
+										<div class="tariff-package__economy-value">1500 &#8381;</div>
+									</div>
+								</li>
+								<li class="tariff-package__price-item">
+									<h4 class="tariff-package__price-title">33 000 &#8381;</h4>
+									<div class="tariff-package__price-row">5 000 x<b> 6,6 &#8381;</b></div>
+									<div class="tariff-package__price-row">10 000 x<b> 3,3 &#8381;</b></div>
+									<div class="tariff-package__economy">
+										<div class="tariff-package__text">Экономия</div>
+										<div class="tariff-package__economy-value">5000 &#8381;</div>
+									</div>
+								</li>
+								<li class="tariff-package__price-item">
+									<h4 class="tariff-package__price-title">64 000 &#8381;</h4>
+									<div class="tariff-package__price-row">10 000 x<b> 6,4 &#8381;</b></div>
+									<div class="tariff-package__price-row">20 000 x<b> 3,2 &#8381;</b></div>
+									<div class="tariff-package__economy">
+										<div class="tariff-package__text">Экономия</div>
+										<div class="tariff-package__economy-value">7000 &#8381;</div>
+									</div>
+								</li>
+								<li class="tariff-package__price-item">
+									<h4 class="tariff-package__price-title">93 000 &#8381;</h4>
+									<div class="tariff-package__price-row">15 000 x<b> 6,2 &#8381;</b></div>
+									<div class="tariff-package__price-row">30 000 x<b> 3,1 &#8381;</b></div>
+									<div class="tariff-package__economy">
+										<div class="tariff-package__text">Экономия</div>
+										<div class="tariff-package__economy-value">10 000 &#8381;</div>
+									</div>
+								</li>
+								<li class="tariff-package__price-item">
+									<h4 class="tariff-package__price-title">120 000 &#8381;</h4>
+									<div class="tariff-package__price-row">20 000 x<b> 6 &#8381;</b></div>
+									<div class="tariff-package__price-row">40 000 x<b> 3 &#8381;</b></div>
+									<div class="tariff-package__economy">
+										<div class="tariff-package__text">Экономия</div>
+										<div class="tariff-package__economy-value">20 000 &#8381;</div>
+									</div>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</section>
+			<button class="btn-scrollup">
+				<svg class="btn-scrollup__icon">
+					<use xlink:href="./images/icons/sprite.svg#arrow"></use>
+				</svg>
+			</button>
+		</div><script src="https://www.youtube.com/iframe_api"></script>
+<script src="./main.js"></script>                      
+	</body>
+</html>

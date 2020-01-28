@@ -1,0 +1,180 @@
+.electronic-doc {
+  &__desk {
+    background: url("./images/backgrounds/bg-el-document.jpg") center center / cover no-repeat;
+  }
+  &__desk-container{
+    display: flex;
+    padding: 65px 0 50px;
+
+    @include tablets {
+      flex-direction: column;
+      padding: 50px 0;
+    }
+    @include phones{
+      padding: 30px 0;
+    }
+
+  }
+
+  &__content{
+    width: 40%;
+    margin-right: 70px;
+    position: relative;
+
+    @include tablets {
+      margin: 0;
+      width: 100%;
+    }
+  }
+
+  &__title {
+    font-size: 64px;
+    color: #fdfdfd;
+    font-weight: 300;
+    margin-bottom: 43px;
+    line-height: 1.05;
+
+    @include tablets {
+      font-size: 56px;
+    }
+    @include phones {
+      font-size: 46px;
+    }
+  }
+
+  &__text {
+    font-size: 21px;
+    color: #ffffff;
+    font-family: "Ubuntu";
+    font-weight: 400;
+    padding-left: 100px;
+    position: relative;
+
+    &:before {
+      content: '';
+      display: block;
+      width: 60px;
+      height: 80px;
+      background: url(./images/arrows.png) 50% 50% no-repeat;
+      position: absolute;
+      top:0;
+      left: 0;
+    }
+
+    @include tablets {
+      margin-bottom: 50px;
+    }
+    @include phones {
+      padding: 0;
+      margin: 0;
+      &:before {
+        display: none;
+      }
+    }
+
+    
+  }
+
+  &__video {
+    border: 2px solid #fff;
+    flex: 1;
+    height: 318px;
+
+    @include phones{
+      position: absolute;
+      top: 28.5rem;
+      height: auto;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 90%;
+    }
+  }
+
+  &__features {
+    background-color: #f7f7f7;
+
+    @include phones {
+      background-color: #fff;
+    }
+  }
+
+  &__features-container {
+    display: flex;
+    padding: 50px 0;
+    @include phones {
+      padding: 200px 0 20px;
+    }
+  }
+
+  &__features-list{
+    display: flex;
+    padding: 0 3%;
+    width: 100%;
+    align-items: flex-start;
+
+    @include phones {
+      flex-direction: column;
+    }
+  }
+  &__feature{
+    width: 46%;
+    position: relative;
+    display: flex;
+    margin-right: 12%;
+    position: relative;
+
+    @include phones {
+      width: 100%;
+      margin-right: 0%;
+    }
+    
+    display: flex;
+    align-items: center;
+    &:before {
+      content: "";
+      display: block;
+      position: absolute;
+      width: 5px;
+      height: 85%;
+      border: 1px solid #79afc7;
+      background-color: #135e92;
+      margin-right: 26px;
+      left: 0;
+      top: 50%;
+      transform: translate(0, -50%);
+    }
+
+    &:last-child {
+      margin-right: 0;
+    }
+
+    @include phones {
+      margin: 0;
+      margin-bottom: 30px;
+    }
+  }
+  &__feature-content {
+    flex: 1;
+    padding-left: 9%;
+  }
+  &__feature-title {
+    font-size: 18px;
+    color: #16466b;
+    font-weight: 400;
+    display: inline-block;
+    text-decoration: underline;
+    margin-bottom: 10px;
+  }
+
+  &__feature-text {
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 15px;
+    color: #16466b;
+  }
+
+  &__feature-link {
+    text-decoration: underline;
+    cursor: pointer;
+  }
+}

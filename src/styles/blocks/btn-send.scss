@@ -1,0 +1,15 @@
+.btn-send {
+  font-size: 28px;
+  color: #ffffff;
+  font-weight: 300;
+  padding: 20px 140px;
+  background-color: #80b5df;
+  border: none;
+  cursor: pointer;
+
+
+  @include phones {
+    padding: 16px 50px;
+    width: 100%;
+  }
+}
